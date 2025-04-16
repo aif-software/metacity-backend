@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qXhjCbRHE/4p6oTY7cWGqXbo8PhJyNn1BDBT8vFeoJA=",
+  "Source": "metacity-backend",
+  "BasePath": "_content/metacity-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
