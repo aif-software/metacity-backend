@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("metacity-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16e2193c440cafc86217577c99623d516228a20e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+286496790ba5132d35695e89fd02f5d7348ac8d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("metacity-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("metacity-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

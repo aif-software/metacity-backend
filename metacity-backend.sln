@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "metacity-backend", "metacity-backend", "{8D6B2D33-A608-5104-F20D-AC4F0C23378B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metacity-backend", "metacity-backend\metacity-backend\metacity-backend.csproj", "{67E5D9A5-2D14-525B-F7BE-E5D8FFB23CE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67E5D9A5-2D14-525B-F7BE-E5D8FFB23CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E5D9A5-2D14-525B-F7BE-E5D8FFB23CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E5D9A5-2D14-525B-F7BE-E5D8FFB23CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E5D9A5-2D14-525B-F7BE-E5D8FFB23CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67E5D9A5-2D14-525B-F7BE-E5D8FFB23CE3} = {8D6B2D33-A608-5104-F20D-AC4F0C23378B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A91FAE1-27D0-426C-8F34-FB2445E79328}
+	EndGlobalSection
+EndGlobal
