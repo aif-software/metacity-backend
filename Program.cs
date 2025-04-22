@@ -13,17 +13,17 @@ builder.Services.AddOpenApiDocument(config =>
 });
 
 // Allow CORS configuration
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
-        policy  =>
-        {
-            policy.WithOrigins("http://localhost:4200")
-                .AllowAnyHeader()
-                .AllowAnyMethod();
-        });
+        policy =>
+            {
+                policy.WithOrigins("http://localhost:4200")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
 });
 
 var app = builder.Build();
@@ -61,38 +61,38 @@ app.MapGet("/Devices/{id}", async (string Id, DeviceDb db) =>
 /** GET Device by sensortype */
 app.MapGet("/Devices/sensorType", async (string inputSensorType, DeviceDb db) =>
   {
-    var devices = await db.Devices
-        .Where(d => d.SensorType == inputSensorType)
-        .ToListAsync();
+      var devices = await db.Devices
+          .Where(d => d.SensorType == inputSensorType)
+          .ToListAsync();
 
-    return devices.Any()
-        ? Results.Ok(devices)
-        : Results.NotFound($"No devices found with sensorType '{inputSensorType}'");
-});
+      return devices.Any()
+          ? Results.Ok(devices)
+          : Results.NotFound($"No devices found with sensorType '{inputSensorType}'");
+  });
 
 /** GET Device by status */
 app.MapGet("/Devices/status", async (string inputStatus, DeviceDb db) =>
   {
-    var devices = await db.Devices
-        .Where(d => d.Status == inputStatus)
-        .ToListAsync();
+      var devices = await db.Devices
+          .Where(d => d.Status == inputStatus)
+          .ToListAsync();
 
-    return devices.Any()
-        ? Results.Ok(devices)
-        : Results.NotFound($"No devices found with status '{inputStatus}'");
-});
+      return devices.Any()
+          ? Results.Ok(devices)
+          : Results.NotFound($"No devices found with status '{inputStatus}'");
+  });
 
 /** GET Device by elevation */
 app.MapGet("/Devices/elevation", async (double inputMinElevation, double inputMaxElevation, DeviceDb db) =>
   {
-    var devices = await db.Devices
-        .Where(d => d.Location.Elevation > inputMinElevation && d.Location.Elevation < inputMaxElevation )
-        .ToListAsync();
+      var devices = await db.Devices
+          .Where(d => d.Location.Elevation > inputMinElevation && d.Location.Elevation < inputMaxElevation)
+          .ToListAsync();
 
-    return devices.Any()
-        ? Results.Ok(devices)
-        : Results.NotFound($"No devices found with elevation between '{inputMinElevation}' and '{inputMaxElevation}'");
-});
+      return devices.Any()
+          ? Results.Ok(devices)
+          : Results.NotFound($"No devices found with elevation between '{inputMinElevation}' and '{inputMaxElevation}'");
+  });
 
 /** GET all devices where data is secret */
 app.MapGet("/Devices/IsDataSecret", async (DeviceDb db) =>
@@ -110,7 +110,7 @@ app.MapPost("/Devices", async (Device Device, DeviceDb db) =>
 /** PUT Device */
 app.MapPut("/Devices/{id}", async (string Id, Device inputDevice, DeviceDb db) =>
 {
-  var device = await db.Devices.FindAsync(Id);
+    var device = await db.Devices.FindAsync(Id);
 
     if (device is null) return Results.NotFound();
 
