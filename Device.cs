@@ -1,14 +1,19 @@
 public class Device
 {
     public required string Id { get; set; }
-    public required Location Location { get; set; }
     public required string CrsType { get; set; }
+    public string? iconName { get; set; }
+    public required Location Location { get; set; }
     public required string Status { get; set; }
     public string? SensorType { get; set; }
     public required string Description { get; set; }
     public required bool IsDataSecret { get; set; }
     public string? DataLink { get; set; }
     public double[]? measuringDirection { get; set; }
+    public double? measuringRadius { get; set; }
+    public double? measuringInterval { get; set; }
+    public string? measuringDescription { get; set; }
+    public required bool stationary { get; set; }
     public string? dataLatestValue { get; set; }
 }
 
