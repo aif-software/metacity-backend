@@ -5,7 +5,8 @@ public class Device
     public string? iconName { get; set; }
     public required Location Location { get; set; }
     public required string Status { get; set; }
-    public string? SensorType { get; set; }
+    public required string SensorType { get; set; }
+    public string? sensorModel { get; set; }
     public required string Description { get; set; }
     public required bool IsDataSecret { get; set; }
     public string? DataLink { get; set; }
