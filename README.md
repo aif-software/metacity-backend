@@ -26,6 +26,7 @@ The sensors have the following syntax:
     },
     "status": Current status of sensor, can be Online, Offline or Maintenance,
     "sensorType": Type of sensor (Temperature, motion, drone, etc),
+    "sensorModel": Model name of sensor (for example: "Elsys ERS CO2"),
     "description": Short description of the location and/or the measurement area of the sensor,
     "IsDataSecret": Is the data the sensor provides secret in terms of GDPR, either true or false,
     "measuringDirection": Direction of measurement in degrees, with 0 being north, [-90, 90] being 180 degrees to north, and [-180, 180] being true circle. [-270, -90] is 180 degrees to south.,
