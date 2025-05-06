@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<DeviceDb>(opt => opt.UseInMemoryDatabase("Devices"));
+builder.Services.AddDbContext<DeviceDb>(opt => opt.UseInMemoryDatabase("devices"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -48,18 +48,18 @@ if (app.Environment.IsDevelopment())
 }
 
 /** GET Devices */
-app.MapGet("/Devices", async (DeviceDb db) =>
+app.MapGet("/devices", async (DeviceDb db) =>
     await db.Devices.ToListAsync());
 
 /** GET Device by Id */
-app.MapGet("/Devices/{id}", async (string Id, DeviceDb db) =>
+app.MapGet("/devices/{id}", async (string Id, DeviceDb db) =>
    await db.Devices.FindAsync(Id)
     is Device Device
         ? Results.Ok(Device)
         : Results.NotFound());
 
 /** GET Device by sensortype */
-app.MapGet("/Devices/sensorType", async (string inputSensorType, DeviceDb db) =>
+app.MapGet("/devices/sensorType", async (string inputSensorType, DeviceDb db) =>
   {
       var devices = await db.Devices
           .Where(d => d.SensorType == inputSensorType)
@@ -71,7 +71,7 @@ app.MapGet("/Devices/sensorType", async (string inputSensorType, DeviceDb db) =>
   });
 
 /** GET Device by status */
-app.MapGet("/Devices/status", async (string inputStatus, DeviceDb db) =>
+app.MapGet("/devices/status", async (string inputStatus, DeviceDb db) =>
   {
       var devices = await db.Devices
           .Where(d => d.Status == inputStatus)
@@ -83,7 +83,7 @@ app.MapGet("/Devices/status", async (string inputStatus, DeviceDb db) =>
   });
 
 /** GET Device by elevation */
-app.MapGet("/Devices/elevation", async (double inputMinElevation, double inputMaxElevation, DeviceDb db) =>
+app.MapGet("/devices/elevation", async (double inputMinElevation, double inputMaxElevation, DeviceDb db) =>
   {
       var devices = await db.Devices
           .Where(d => d.Location.Elevation > inputMinElevation && d.Location.Elevation < inputMaxElevation)
@@ -95,20 +95,20 @@ app.MapGet("/Devices/elevation", async (double inputMinElevation, double inputMa
   });
 
 /** GET all devices where data is secret */
-app.MapGet("/Devices/IsDataSecret", async (DeviceDb db) =>
+app.MapGet("/devices/isdatasecret", async (DeviceDb db) =>
     await db.Devices.Where(d => d.IsDataSecret).ToListAsync());
 
 /** POST Device */
-app.MapPost("/Devices", async (Device Device, DeviceDb db) =>
+app.MapPost("/devices", async (Device Device, DeviceDb db) =>
 {
     db.Devices.Add(Device);
     await db.SaveChangesAsync();
 
-    return Results.Created($"/Devices/{Device.Id}", Device);
+    return Results.Created($"/devices/{Device.Id}", Device);
 });
 
 /** PUT Device */
-app.MapPut("/Devices/{id}", async (string Id, Device inputDevice, DeviceDb db) =>
+app.MapPut("/devices/{id}", async (string Id, Device inputDevice, DeviceDb db) =>
 {
     var device = await db.Devices.FindAsync(Id);
 
@@ -130,7 +130,7 @@ app.MapPut("/Devices/{id}", async (string Id, Device inputDevice, DeviceDb db) =
 });
 
 /** DELETE Device */
-app.MapDelete("/Devices/{id}", async (string Id, DeviceDb db) =>
+app.MapDelete("/devices/{id}", async (string Id, DeviceDb db) =>
 {
     if (await db.Devices.FindAsync(Id) is Device Device)
     {
