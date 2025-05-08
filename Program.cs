@@ -52,8 +52,8 @@ app.MapGet("/devices", async (DeviceDb db) =>
     await db.Devices.ToListAsync());
 
 /** GET Device by Id */
-app.MapGet("/devices/{id}", async (string Id, DeviceDb db) =>
-   await db.Devices.FindAsync(Id)
+app.MapGet("/devices/{id}", async (string id, DeviceDb db) =>
+   await db.Devices.FindAsync(id)
     is Device Device
         ? Results.Ok(Device)
         : Results.NotFound());
@@ -62,7 +62,7 @@ app.MapGet("/devices/{id}", async (string Id, DeviceDb db) =>
 app.MapGet("/devices/sensorType", async (string inputSensorType, DeviceDb db) =>
   {
       var devices = await db.Devices
-          .Where(d => d.SensorType == inputSensorType)
+          .Where(d => d.sensorType == inputSensorType)
           .ToListAsync();
 
       return devices.Any()
@@ -74,7 +74,7 @@ app.MapGet("/devices/sensorType", async (string inputSensorType, DeviceDb db) =>
 app.MapGet("/devices/status", async (string inputStatus, DeviceDb db) =>
   {
       var devices = await db.Devices
-          .Where(d => d.Status == inputStatus)
+          .Where(d => d.status == inputStatus)
           .ToListAsync();
 
       return devices.Any()
@@ -86,7 +86,7 @@ app.MapGet("/devices/status", async (string inputStatus, DeviceDb db) =>
 app.MapGet("/devices/elevation", async (double inputMinElevation, double inputMaxElevation, DeviceDb db) =>
   {
       var devices = await db.Devices
-          .Where(d => d.Location.Elevation > inputMinElevation && d.Location.Elevation < inputMaxElevation)
+          .Where(d => d.location.elevation > inputMinElevation && d.location.elevation < inputMaxElevation)
           .ToListAsync();
 
       return devices.Any()
@@ -96,7 +96,7 @@ app.MapGet("/devices/elevation", async (double inputMinElevation, double inputMa
 
 /** GET all devices where data is secret */
 app.MapGet("/devices/isdatasecret", async (DeviceDb db) =>
-    await db.Devices.Where(d => d.IsDataSecret).ToListAsync());
+    await db.Devices.Where(d => d.isDataSecret).ToListAsync());
 
 /** POST Device */
 app.MapPost("/devices", async (Device Device, DeviceDb db) =>
@@ -104,24 +104,31 @@ app.MapPost("/devices", async (Device Device, DeviceDb db) =>
     db.Devices.Add(Device);
     await db.SaveChangesAsync();
 
-    return Results.Created($"/devices/{Device.Id}", Device);
+    return Results.Created($"/devices/{Device.id}", Device);
 });
 
 /** PUT Device */
-app.MapPut("/devices/{id}", async (string Id, Device inputDevice, DeviceDb db) =>
+app.MapPut("/devices/{id}", async (string id, Device inputDevice, DeviceDb db) =>
 {
-    var device = await db.Devices.FindAsync(Id);
+    var device = await db.Devices.FindAsync(id);
 
     if (device is null) return Results.NotFound();
 
-    device.Location = inputDevice.Location;
-    device.CrsType = inputDevice.CrsType;
-    device.Status = inputDevice.Status;
-    device.SensorType = inputDevice.SensorType;
-    device.Description = inputDevice.Description;
-    device.IsDataSecret = inputDevice.IsDataSecret;
-    device.DataLink = inputDevice.DataLink;
+    device.id = inputDevice.id;
+    device.crsType = inputDevice.crsType;
+    device.iconName = inputDevice.iconName;
+    device.location = inputDevice.location;
+    device.status = inputDevice.status;
+    device.sensorType = inputDevice.sensorType;
+    device.sensorModel = inputDevice.sensorModel;
+    device.description = inputDevice.description;
+    device.isDataSecret = inputDevice.isDataSecret;
+    device.dataLink = inputDevice.dataLink;
     device.measuringDirection = inputDevice.measuringDirection;
+    device.measuringRadius = inputDevice.measuringRadius;
+    device.measuringInterval = inputDevice.measuringInterval;
+    device.measuringDescription = inputDevice.measuringDescription;
+    device.stationary = inputDevice.stationary;
     device.dataLatestValue = inputDevice.dataLatestValue;
 
     await db.SaveChangesAsync();
@@ -130,9 +137,9 @@ app.MapPut("/devices/{id}", async (string Id, Device inputDevice, DeviceDb db) =
 });
 
 /** DELETE Device */
-app.MapDelete("/devices/{id}", async (string Id, DeviceDb db) =>
+app.MapDelete("/devices/{id}", async (string id, DeviceDb db) =>
 {
-    if (await db.Devices.FindAsync(Id) is Device Device)
+    if (await db.Devices.FindAsync(id) is Device Device)
     {
         db.Devices.Remove(Device);
         await db.SaveChangesAsync();
