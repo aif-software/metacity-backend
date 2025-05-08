@@ -10,13 +10,13 @@ class DeviceDb : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Device>()
-            .OwnsOne(d => d.Location, locationBuilder =>
+            .OwnsOne(d => d.location, locationBuilder =>
             {
-                locationBuilder.Property(l => l.Lat);
-                locationBuilder.Property(l => l.Lng);
-                
-                locationBuilder.OwnsMany(l => l.Path);
-                locationBuilder.OwnsMany(l => l.Area);
+                locationBuilder.Property(l => l.lat);
+                locationBuilder.Property(l => l.lng);
+
+                locationBuilder.OwnsMany(l => l.path);
+                locationBuilder.OwnsMany(l => l.area);
             });
     }
-}   
+}
