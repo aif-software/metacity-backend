@@ -1,15 +1,15 @@
 public class Device
 {
-    public required string Id { get; set; }
-    public required string CrsType { get; set; }
+    public required string id { get; set; }
+    public required string crsType { get; set; }
     public string? iconName { get; set; }
-    public required Location Location { get; set; }
-    public required string Status { get; set; }
-    public required string SensorType { get; set; }
+    public required Location location { get; set; }
+    public required string status { get; set; }
+    public required string sensorType { get; set; }
     public string? sensorModel { get; set; }
-    public required string Description { get; set; }
-    public required bool IsDataSecret { get; set; }
-    public string? DataLink { get; set; }
+    public required string description { get; set; }
+    public required bool isDataSecret { get; set; }
+    public string? dataLink { get; set; }
     public double[]? measuringDirection { get; set; }
     public double? measuringRadius { get; set; }
     public double? measuringInterval { get; set; }
@@ -20,15 +20,15 @@ public class Device
 
 public class Location
 {
-    public required double Lat { get; set; }
-    public required double Lng { get; set; }
-    public double Elevation { get; set; }
-    public List<LatLng>? Path { get; set; }
-    public List<LatLng>? Area { get; set; }
+    public required double lat { get; set; }
+    public required double lng { get; set; }
+    public double elevation { get; set; }
+    public List<LatLng>? path { get; set; }
+    public List<LatLng>? area { get; set; }
 }
 
 public class LatLng
 {
-    public double Lat { get; set; }
-    public double Lng { get; set; }
+    public double lat { get; set; }
+    public double lng { get; set; }
 }
