@@ -41,4 +41,29 @@ public static class DataInput
             logger.LogError(ex, "Error inputting devices from JSON");
         }
     }
+
+    public static void InputDeviceList(IServiceProvider services, List<Device> deviceList)
+    {
+        using var scope = services.CreateScope();
+        var context = scope.ServiceProvider.GetRequiredService<DeviceDb>();
+        var logger = scope.ServiceProvider.GetRequiredService<ILoggerFactory>().CreateLogger("DataInputList");
+
+        try
+        {
+            if (deviceList != null && deviceList.Any())
+            {
+                context.Devices.AddRange(deviceList);
+                context.SaveChanges();
+                logger.LogInformation("Input {Count} devices.", deviceList.Count);
+            }
+            else
+            {
+                logger.LogWarning("No devices to input.");
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Error inputting devices.");
+        }
+    }
 }
