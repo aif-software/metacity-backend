@@ -149,4 +149,40 @@ app.MapDelete("/devices/{id}", async (string id, DeviceDb db) =>
     return Results.NotFound();
 });
 
+var query = @"
+query GetAllEcoCounterSites {
+  ecoCounterSites {
+    id
+    siteId
+    name
+    domain
+    userType
+    timezone
+    interval
+    sens
+    channels {
+      id
+      siteId
+      name
+      domain
+      userType
+      timezone
+      interval
+      sens
+      lat
+      lon
+    }
+  }
+}
+";
+
+var client = new HttpClient();
+var graphQLClient = new GraphQLClient(client);
+
+string endpoint = "https://api.oulunliikenne.fi/proxy/graphql";
+List<Device> result = await graphQLClient.SendQueryAsync(endpoint, query);
+
+DataInput.InputDeviceList(app.Services, result);
+//Console.WriteLine(result);
+
 app.Run();
