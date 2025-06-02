@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-
 class DeviceDb : DbContext
 {
     public DeviceDb(DbContextOptions<DeviceDb> options)
@@ -18,5 +17,6 @@ class DeviceDb : DbContext
                 locationBuilder.OwnsMany(l => l.path);
                 locationBuilder.OwnsMany(l => l.area);
             });
+        modelBuilder.Entity<Device>().OwnsOne(d => d.weatherData);
     }
 }
