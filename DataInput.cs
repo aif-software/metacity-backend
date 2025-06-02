@@ -27,6 +27,10 @@ public static class DataInput
             var devices = JsonSerializer.Deserialize<List<Device>>(json, options);
             if (devices != null)
             {
+                foreach (var device in devices)
+                {
+                    device.id = IdIndexService.GetId();
+                }
                 context.Devices.AddRange(devices);
                 context.SaveChanges();
                 logger.LogInformation("Input {Count} devices.", devices.Count);
