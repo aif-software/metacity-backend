@@ -1,7 +1,15 @@
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<DeviceDb>(opt => opt.UseInMemoryDatabase("devices"));
+builder.Services.AddDbContext<DeviceDb>(opt =>
+{
+    opt.UseInMemoryDatabase("devices");
+    opt.EnableSensitiveDataLogging(true);
+}
+
+);
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -33,6 +41,23 @@ app.UseCors(MyAllowSpecificOrigins);
 
 // Input existing device list, placeholder for development
 DataInput.InputDevices(app.Services, "devices.json");
+
+// Input walking and cycling counters
+var ecoCounterResult = await EcoCounterService.GetEcoCountersAsync();
+
+DataInput.InputDeviceList(app.Services, ecoCounterResult);
+
+var weatherStationResult = await WeatherStationService.GetWeatherStationsAsync();
+
+DataInput.InputDeviceList(app.Services, weatherStationResult);
+
+var bikeStationResult = await BikeStationService.GetBikeStationsAsync();
+
+DataInput.InputDeviceList(app.Services, bikeStationResult);
+
+var tmsStationResult = await TmsStationService.GetTmsStationsAsync();
+
+DataInput.InputDeviceList(app.Services, tmsStationResult);
 
 // Swagger setup
 if (app.Environment.IsDevelopment())
@@ -148,41 +173,5 @@ app.MapDelete("/devices/{id}", async (string id, DeviceDb db) =>
 
     return Results.NotFound();
 });
-
-var query = @"
-query GetAllEcoCounterSites {
-  ecoCounterSites {
-    id
-    siteId
-    name
-    domain
-    userType
-    timezone
-    interval
-    sens
-    channels {
-      id
-      siteId
-      name
-      domain
-      userType
-      timezone
-      interval
-      sens
-      lat
-      lon
-    }
-  }
-}
-";
-
-var client = new HttpClient();
-var graphQLClient = new GraphQLClient(client);
-
-string endpoint = "https://api.oulunliikenne.fi/proxy/graphql";
-List<Device> result = await graphQLClient.SendQueryAsync(endpoint, query);
-
-DataInput.InputDeviceList(app.Services, result);
-//Console.WriteLine(result);
 
 app.Run();
