@@ -1,99 +1,22 @@
 [
   {
-    "id": "sensor1",
-    "crsType": "EPSG:4326",
-    "iconName": "temperature",
-    "location": { "lat": 65.051, "lng": 25.46, "elevation": 10 },
-    "status": "Offline",
-    "sensorType": "temperature",
-    "description": "Above street sign",
-    "IsDataSecret": true,
-    "measuringDirection": [0, 40],
-    "measuringRadius": 10,
-    "measuringInterval": 360,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "sensor2",
-    "crsType": "EPSG:4326",
-    "iconName": "temperature",
-    "location": { "lat": 65.052, "lng": 25.46, "elevation": 5 },
-    "status": "Online",
-    "sensorType": "temperature",
-    "description": "Next to garbage bin",
-    "IsDataSecret": false,
-    "measuringDirection": [10, 50],
-    "measuringRadius": 15,
-    "measuringInterval": 360,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "sensor3",
-    "crsType": "EPSG:4326",
-    "iconName": "temperature",
-    "location": { "lat": 65.053, "lng": 25.46, "elevation": 20 },
-    "status": "Online",
-    "sensorType": "temperature",
-    "description": "Near bus stop",
-    "IsDataSecret": false,
-    "measuringDirection": [20, 60],
-    "measuringRadius": 15,
-    "measuringInterval": 360,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "sensor4",
-    "crsType": "EPSG:4326",
-    "iconName": "temperature",
-    "location": { "lat": 65.054, "lng": 25.46, "elevation": 21 },
-    "status": "Online",
-    "sensorType": "temperature",
-    "description": "Next to bicycle rack",
-    "IsDataSecret": false,
-    "measuringDirection": [30, 70],
-    "measuringRadius": 15,
-    "measuringInterval": 360,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "sensor5",
-    "crsType": "EPSG:4326",
-    "iconName": "temperature",
-    "location": { "lat": 65.055, "lng": 25.46, "elevation": 22 },
-    "status": "Online",
-    "sensorType": "temperature",
-    "description": "On a bench",
-    "IsDataSecret": false,
-    "measuringDirection": [40, 80],
-    "measuringRadius": 15,
-    "measuringInterval": 360,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "sensor6",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "co2",
-    "location": { "lat": 65.056, "lng": 25.46, "elevation": 23 },
+    "location": {
+      "lat": 65.056,
+      "lng": 25.46,
+      "elevation": 23
+    },
     "status": "Online",
     "sensorType": "co2",
     "description": "Near crosswalk",
     "IsDataSecret": false,
-    "measuringDirection": [50, 90],
+    "measuringDirection": [
+      50,
+      90
+    ],
     "measuringRadius": 15,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -102,15 +25,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "sensor7",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "co2",
-    "location": { "lat": 65.057, "lng": 25.46, "elevation": 24 },
+    "location": {
+      "lat": 65.057,
+      "lng": 25.46,
+      "elevation": 24
+    },
     "status": "Maintenance",
     "sensorType": "co2",
     "description": "Above a trash can",
     "IsDataSecret": false,
-    "measuringDirection": [60, 100],
+    "measuringDirection": [
+      60,
+      100
+    ],
     "measuringRadius": 5,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -119,15 +50,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "sensor8",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "motion",
-    "location": { "lat": 65.058, "lng": 25.46, "elevation": 10 },
-    "status": "Maintenance",
+    "location": {
+      "lat": 65.058,
+      "lng": 25.46,
+      "elevation": 10
+    },
+    "status": "Online",
     "sensorType": "motion",
     "description": "Next to a tree",
     "IsDataSecret": false,
-    "measuringDirection": [70, 110],
+    "measuringDirection": [
+      70,
+      110
+    ],
     "measuringRadius": 5,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -136,15 +75,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "sensor9",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "motion",
-    "location": { "lat": 65.059, "lng": 25.46, "elevation": 10 },
+    "location": {
+      "lat": 65.059,
+      "lng": 25.46,
+      "elevation": 10
+    },
     "status": "Maintenance",
     "sensorType": "motion",
     "description": "Near entrance gate",
     "IsDataSecret": false,
-    "measuringDirection": [80, 120],
+    "measuringDirection": [
+      80,
+      120
+    ],
     "measuringRadius": 5,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -153,15 +100,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "sensor10",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "moisture",
-    "location": { "lat": 65.06, "lng": 25.46, "elevation": 10 },
+    "location": {
+      "lat": 65.06,
+      "lng": 25.46,
+      "elevation": 10
+    },
     "status": "Offline",
     "sensorType": "humidity",
     "description": "Next to lamp post",
     "IsDataSecret": false,
-    "measuringDirection": [90, 130],
+    "measuringDirection": [
+      90,
+      130
+    ],
     "measuringRadius": 5,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -170,16 +125,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 1",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0588222, "lng": 25.4704292, "elevation": 0 },
+    "location": {
+      "lat": 65.0588222,
+      "lng": 25.4704292,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -188,16 +151,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 2",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0588222, "lng": 25.4705432, "elevation": 0 },
+    "location": {
+      "lat": 65.0588222,
+      "lng": 25.4705432,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -206,16 +177,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 3",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0588222, "lng": 25.4706344, "elevation": 0 },
+    "location": {
+      "lat": 65.0588222,
+      "lng": 25.4706344,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -224,16 +203,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 4",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0588222, "lng": 25.4707524, "elevation": 0 },
+    "location": {
+      "lat": 65.0588222,
+      "lng": 25.4707524,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -242,16 +229,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 5",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0588222, "lng": 25.4708517, "elevation": 0 },
+    "location": {
+      "lat": 65.0588222,
+      "lng": 25.4708517,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -260,16 +255,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 6",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0586203, "lng": 25.4704306, "elevation": 0 },
+    "location": {
+      "lat": 65.0586203,
+      "lng": 25.4704306,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -278,16 +281,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 7",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0586203, "lng": 25.4705459, "elevation": 0 },
+    "location": {
+      "lat": 65.0586203,
+      "lng": 25.4705459,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -296,16 +307,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 8",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0586203, "lng": 25.4706599, "elevation": 0 },
+    "location": {
+      "lat": 65.0586203,
+      "lng": 25.4706599,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -314,16 +333,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 9",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0586203, "lng": 25.4707632, "elevation": 0 },
+    "location": {
+      "lat": 65.0586203,
+      "lng": 25.4707632,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -332,16 +359,24 @@
     "dataLatestValue": null
   },
   {
-    "id": "Parkkisensori 10",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "parking",
-    "location": { "lat": 65.0586203, "lng": 25.4708651, "elevation": 0 },
+    "location": {
+      "lat": 65.0586203,
+      "lng": 25.4708651,
+      "elevation": 0
+    },
     "status": "Online",
     "sensorType": "parking",
     "sensorModel": "PlacePod® Vehicle Detection Sensor",
     "description": "Inside the parking square",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
@@ -350,15 +385,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "HulevesiNormaalikoulu",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "moisture",
-    "location": { "lat": 65.063778, "lng": 25.471531, "elevation": -25 },
+    "location": {
+      "lat": 65.063778,
+      "lng": 25.471531,
+      "elevation": -25
+    },
     "status": "Online",
     "sensorType": "rainwater",
     "description": "Inside the sewer pipe",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 10,
     "measuringInterval": 60,
     "measuringDescription": "",
@@ -367,7 +410,8 @@
     "dataLatestValue": null
   },
   {
-    "id": "Drone 1",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "drone",
     "location": {
@@ -375,18 +419,36 @@
       "lng": 25.44,
       "elevation": 10,
       "path": [
-        { "lat": 65.06402550509823, "lng": 25.45313358306885 },
-        { "lat": 65.06398931840567, "lng": 25.4448938369751 },
-        { "lat": 65.06346460584034, "lng": 25.439615249633793 },
-        { "lat": 65.06203516401268, "lng": 25.43716907501221 },
-        { "lat": 65.06105803306224, "lng": 25.440044403076175 }
+        {
+          "lat": 65.06402550509823,
+          "lng": 25.45313358306885
+        },
+        {
+          "lat": 65.06398931840567,
+          "lng": 25.4448938369751
+        },
+        {
+          "lat": 65.06346460584034,
+          "lng": 25.439615249633793
+        },
+        {
+          "lat": 65.06203516401268,
+          "lng": 25.43716907501221
+        },
+        {
+          "lat": 65.06105803306224,
+          "lng": 25.440044403076175
+        }
       ]
     },
     "status": "Offline",
     "sensorType": "drone",
     "description": "On the street corner",
     "IsDataSecret": false,
-    "measuringDirection": [200, 240],
+    "measuringDirection": [
+      200,
+      240
+    ],
     "measuringRadius": 10,
     "measuringInterval": 600,
     "measuringDescription": "",
@@ -395,7 +457,8 @@
     "dataLatestValue": null
   },
   {
-    "id": "Drone 2",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "drone",
     "location": {
@@ -407,7 +470,10 @@
     "sensorType": "drone",
     "description": "Above a Street Sign",
     "IsDataSecret": false,
-    "measuringDirection": [220, 260],
+    "measuringDirection": [
+      220,
+      260
+    ],
     "measuringRadius": 10,
     "measuringInterval": 600,
     "measuringDescription": "",
@@ -416,7 +482,8 @@
     "dataLatestValue": null
   },
   {
-    "id": "Drone 3",
+    "id": null,
+    "name": "",
     "crsType": "EPSG:4326",
     "iconName": "drone",
     "location": {
@@ -424,33 +491,90 @@
       "lng": 25.47486081719399,
       "elevation": 10,
       "path": [
-        { "lat": 65.05651571320153, "lng": 25.47690868377686 },
-        { "lat": 65.05503160025646, "lng": 25.478539466857914 },
-        { "lat": 65.05477820685932, "lng": 25.475492477416992 },
-        { "lat": 65.05396371176485, "lng": 25.47613620758057 },
-        { "lat": 65.05381891003096, "lng": 25.479998588562015 },
-        { "lat": 65.05470580830332, "lng": 25.48210144042969 },
-        { "lat": 65.0556288751601, "lng": 25.482401847839355 },
-        { "lat": 65.0551039979274, "lng": 25.485706329345703 },
-        { "lat": 65.0538008097589, "lng": 25.485620498657227 }
+        {
+          "lat": 65.05651571320153,
+          "lng": 25.47690868377686
+        },
+        {
+          "lat": 65.05503160025646,
+          "lng": 25.478539466857914
+        },
+        {
+          "lat": 65.05477820685932,
+          "lng": 25.475492477416992
+        },
+        {
+          "lat": 65.05396371176485,
+          "lng": 25.47613620758057
+        },
+        {
+          "lat": 65.05381891003096,
+          "lng": 25.479998588562015
+        },
+        {
+          "lat": 65.05470580830332,
+          "lng": 25.48210144042969
+        },
+        {
+          "lat": 65.0556288751601,
+          "lng": 25.482401847839355
+        },
+        {
+          "lat": 65.0551039979274,
+          "lng": 25.485706329345703
+        },
+        {
+          "lat": 65.0538008097589,
+          "lng": 25.485620498657227
+        }
       ],
       "area": [
-        { "lat": 65.05313109105128, "lng": 25.48665046691895 },
-        { "lat": 65.05506779911651, "lng": 25.490427017211914 },
-        { "lat": 65.05570127120852, "lng": 25.485363006591797 },
-        { "lat": 65.05651571320153, "lng": 25.48158645629883 },
-        { "lat": 65.0571310528665, "lng": 25.476007461547855 },
-        { "lat": 65.05633472824302, "lng": 25.47064304351807 },
-        { "lat": 65.05403611233679, "lng": 25.468454360961918 },
-        { "lat": 65.0533482989625, "lng": 25.4743766784668 },
-        { "lat": 65.05237084942186, "lng": 25.480771064758304 }
+        {
+          "lat": 65.05313109105128,
+          "lng": 25.48665046691895
+        },
+        {
+          "lat": 65.05506779911651,
+          "lng": 25.490427017211914
+        },
+        {
+          "lat": 65.05570127120852,
+          "lng": 25.485363006591797
+        },
+        {
+          "lat": 65.05651571320153,
+          "lng": 25.48158645629883
+        },
+        {
+          "lat": 65.0571310528665,
+          "lng": 25.476007461547855
+        },
+        {
+          "lat": 65.05633472824302,
+          "lng": 25.47064304351807
+        },
+        {
+          "lat": 65.05403611233679,
+          "lng": 25.468454360961918
+        },
+        {
+          "lat": 65.0533482989625,
+          "lng": 25.4743766784668
+        },
+        {
+          "lat": 65.05237084942186,
+          "lng": 25.480771064758304
+        }
       ]
     },
     "status": "Maintenance",
     "sensorType": "drone",
     "description": "Above a House",
     "IsDataSecret": false,
-    "measuringDirection": [210, 250],
+    "measuringDirection": [
+      210,
+      250
+    ],
     "measuringRadius": 10,
     "measuringInterval": 600,
     "measuringDescription": "",
@@ -459,15 +583,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "HA01LV",
+    "id": null,
+    "name": "HA01LV",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7228019, "lng": 422565, "elevation": 5 },
+    "location": {
+      "lat": 7228019,
+      "lng": 422565,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Haukiputaantie (Mt 847)-Haukiväylä (Mt 848)",
     "IsDataSecret": false,
-    "measuringDirection": [240, 280],
+    "measuringDirection": [
+      240,
+      280
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -476,15 +608,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU150",
+    "id": null,
+    "name": "OULU150",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215966, "lng": 426058, "elevation": 5 },
+    "location": {
+      "lat": 7215966,
+      "lng": 426058,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Haukiputaantie - Koskelantie",
     "IsDataSecret": false,
-    "measuringDirection": [320, 90],
+    "measuringDirection": [
+      320,
+      90
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -493,15 +633,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU152",
+    "id": null,
+    "name": "OULU152",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215616, "lng": 426686, "elevation": 5 },
+    "location": {
+      "lat": 7215616,
+      "lng": 426686,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Haukiputaantie - Elektroniikkatie",
     "IsDataSecret": false,
-    "measuringDirection": [-60, 120],
+    "measuringDirection": [
+      -60,
+      120
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -510,15 +658,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU153",
+    "id": null,
+    "name": "OULU153",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215512, "lng": 426905, "elevation": 5 },
+    "location": {
+      "lat": 7215512,
+      "lng": 426905,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Linnanmaantie-Pohjantie (Vt 4), länsi",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -527,15 +683,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU154",
+    "id": null,
+    "name": "OULU154",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215534, "lng": 427185, "elevation": 5 },
+    "location": {
+      "lat": 7215534,
+      "lng": 427185,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Linnanmaantie - Pohjantie (Vt 4), itä",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -544,15 +708,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU165",
+    "id": null,
+    "name": "OULU165",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7214881, "lng": 428361, "elevation": 5 },
+    "location": {
+      "lat": 7214881,
+      "lng": 428361,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Alakyläntie-Syynimaantie",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
+    "measuringDirection": [
+      -180,
+      180
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -561,15 +733,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU166",
+    "id": null,
+    "name": "OULU166",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215517, "lng": 428305, "elevation": 5 },
+    "location": {
+      "lat": 7215517,
+      "lng": 428305,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Alakyläntie - Linnanmaantie",
     "IsDataSecret": false,
-    "measuringDirection": [-180, 20],
+    "measuringDirection": [
+      -180,
+      20
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -578,15 +758,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU167",
+    "id": null,
+    "name": "OULU167",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215532, "lng": 428117, "elevation": 5 },
+    "location": {
+      "lat": 7215532,
+      "lng": 428117,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Linnanmaantie - Yliopistokatu",
     "IsDataSecret": false,
-    "measuringDirection": [-110, 110],
+    "measuringDirection": [
+      -110,
+      110
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -595,15 +783,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU168",
+    "id": null,
+    "name": "OULU168",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7215877, "lng": 428542, "elevation": 5 },
+    "location": {
+      "lat": 7215877,
+      "lng": 428542,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Alakyläntie - Kalevalantie",
     "IsDataSecret": false,
-    "measuringDirection": [-140, 80],
+    "measuringDirection": [
+      -140,
+      80
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -612,15 +808,23 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU175",
+    "id": null,
+    "name": "OULU175",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7216617, "lng": 429616, "elevation": 5 },
+    "location": {
+      "lat": 7216617,
+      "lng": 429616,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Raitotie-Pöllöntie",
     "IsDataSecret": false,
-    "measuringDirection": [-80, 140],
+    "measuringDirection": [
+      -80,
+      140
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
@@ -629,904 +833,28 @@
     "dataLatestValue": null
   },
   {
-    "id": "OULU176",
+    "id": null,
+    "name": "OULU176",
     "crsType": "EPSG:3067",
     "iconName": "traffic",
-    "location": { "lat": 7216831, "lng": 429171, "elevation": 5 },
+    "location": {
+      "lat": 7216831,
+      "lng": 429171,
+      "elevation": 5
+    },
     "status": "Online",
     "sensorType": "Traffic Light",
     "description": "Raitotie-Kalikkatie",
     "IsDataSecret": false,
-    "measuringDirection": [-85, 140],
+    "measuringDirection": [
+      -85,
+      140
+    ],
     "measuringRadius": 10,
     "measuringInterval": 300,
     "measuringDescription": "",
     "stationary": true,
     "dataLink": "https://api.oulunliikenne.fi/tpm/kpi/traffic-volume/OULU176",
-    "dataLatestValue": null
-  },
-  {
-    "id": "QmlrZVJlbnRhbFN0YXRpb246NzIxNTU=",
-    "crsType": "EPSG:4326",
-    "iconName": "bike",
-    "location": { "lat": 65.054886, "lng": 25.470808, "elevation": 0 },
-    "status": "Online",
-    "sensorType": "Bike Rental",
-    "description": "Linnanmaan liikuntahalli",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 10,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": "https://wp.oulunliikenne.fi/avoin-data/pyorailykavely/graphql-rajapinnat/#py%C3%B6r%C3%A4ily-ja-k%C3%A4vely-m%C3%A4%C3%A4r%C3%A4t",
-    "dataLatestValue": null
-  },
-  {
-    "id": "QmlrZVJlbnRhbFN0YXRpb246NzIxNTY=",
-    "crsType": "EPSG:4326",
-    "iconName": "bike",
-    "location": { "lat": 65.058047, "lng": 25.468058, "elevation": 0 },
-    "status": "Online",
-    "sensorType": "Bike Rental",
-    "description": "Erkki Koiso-Kanttilan katu",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 10,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": "https://wp.oulunliikenne.fi/avoin-data/pyorailykavely/graphql-rajapinnat/#py%C3%B6r%C3%A4ily-ja-k%C3%A4vely-m%C3%A4%C3%A4r%C3%A4t",
-    "dataLatestValue": null
-  },
-  {
-    "id": "QmlrZVJlbnRhbFN0YXRpb246NzIxNTc=",
-    "crsType": "EPSG:4326",
-    "iconName": "bike",
-    "location": { "lat": 65.059191, "lng": 25.463362, "elevation": 0 },
-    "status": "Online",
-    "sensorType": "Bike Rental",
-    "description": "Oulun yliopisto, J-ovi",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 10,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": "https://wp.oulunliikenne.fi/avoin-data/pyorailykavely/graphql-rajapinnat/#py%C3%B6r%C3%A4ily-ja-k%C3%A4vely-m%C3%A4%C3%A4r%C3%A4t",
-    "dataLatestValue": null
-  },
-  {
-    "id": "QmlrZVJlbnRhbFN0YXRpb246NzIxNTg=",
-    "crsType": "EPSG:4326",
-    "iconName": "bike",
-    "location": { "lat": 65.059815, "lng": 25.478604, "elevation": 0 },
-    "status": "Online",
-    "sensorType": "Bike Rental",
-    "description": "Kaijonharju",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 10,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": "https://wp.oulunliikenne.fi/avoin-data/pyorailykavely/graphql-rajapinnat/#py%C3%B6r%C3%A4ily-ja-k%C3%A4vely-m%C3%A4%C3%A4r%C3%A4t",
-    "dataLatestValue": null
-  },
-  {
-    "id": "QmlrZVJlbnRhbFN0YXRpb246NzIxNTk=",
-    "crsType": "EPSG:4326",
-    "iconName": "bike",
-    "location": { "lat": 65.063185, "lng": 25.471024, "elevation": 0 },
-    "status": "Online",
-    "sensorType": "Bike Rental",
-    "description": "Oulun normaalikoulu ja lukio",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 10,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": "https://wp.oulunliikenne.fi/avoin-data/pyorailykavely/graphql-rajapinnat/#py%C3%B6r%C3%A4ily-ja-k%C3%A4vely-m%C3%A4%C3%A4r%C3%A4t",
-    "dataLatestValue": null
-  },
-  {
-    "id": "QmlrZVJlbnRhbFN0YXRpb246NzIxNjA=",
-    "crsType": "EPSG:4326",
-    "iconName": "bike",
-    "location": { "lat": 65.036065, "lng": 25.439965, "elevation": 0 },
-    "status": "Online",
-    "sensorType": "Bike Rental",
-    "description": "Elektroniikkatie",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 10,
-    "measuringInterval": 360,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": "https://wp.oulunliikenne.fi/avoin-data/pyorailykavely/graphql-rajapinnat/#py%C3%B6r%C3%A4ily-ja-k%C3%A4vely-m%C3%A4%C3%A4r%C3%A4t",
-    "dataLatestValue": null
-  },
-  {
-    "id": "21201",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.020043, "lng": 25.508104, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Intiö_LML",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21202",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.108883, "lng": 25.716369, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "Vt20_Oulu_Honkimaa_Flex",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21203",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.007569, "lng": 25.505512, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "Vt4_Oulu_Kontinkangas_Flex",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21204",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.962796, "lng": 25.515572, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Kaakkuri_LML",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21205",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.034668, "lng": 25.488916, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Välivainio",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21206",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.046885, "lng": 25.461919, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Niittyaro",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21207",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.070952, "lng": 25.442411, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Kuivasranta",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21208",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.985372, "lng": 25.505204, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Hiironen",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21209",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.028146, "lng": 25.505316, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Laanila",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21297",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.945424, "lng": 25.468886, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "Topo 8244",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "21298",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.945424, "lng": 25.468886, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "Topo 8243",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24201",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.979487, "lng": 25.509072, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Mäntylä",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24202",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.302676, "lng": 25.374974, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Ii",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24204",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.686291, "lng": 24.561522, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt8_Raahe",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24205",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.708879, "lng": 25.386099, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "kt86_Liminka_Heinijärvi",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24206",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.946703, "lng": 25.532678, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Ouluntulli",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24207",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.174538, "lng": 25.425123, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Haukipudas",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24222",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.839634, "lng": 25.48791, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st847_Tupos",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24223",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.065491, "lng": 25.63996, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt20_Kiiminki",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24225",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.66987, "lng": 26.688639, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "kt78_Pudasjärvi",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24226",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.914518, "lng": 25.535325, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Kempele",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24227",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.856358, "lng": 25.894297, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt22_Muhos_Riihikylä",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24228",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.120244, "lng": 25.372514, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st847_Haukipudas",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24229",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.533222, "lng": 25.251153, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Ii_Myllykangas",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24230",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.265773, "lng": 26.729714, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt20_Rankkila",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24231",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.120506, "lng": 25.429964, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Kello",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24235",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.783198, "lng": 25.350434, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt8_Lapinkangas",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24236",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.804166, "lng": 25.509354, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Ala-Temmes",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24237",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.019337, "lng": 25.508377, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Intiö",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24238",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.046788, "lng": 25.462881, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Isko",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24239",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.949734, "lng": 25.49017, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st815_Lentokentäntie",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24243",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.842413, "lng": 25.505382, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Luhasto",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24244",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.032306, "lng": 25.494083, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Laanila",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24246",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.071121, "lng": 25.442274, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Kuivasjärvi",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24247",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.970414, "lng": 25.492182, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st847_Oulunlahti",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24248",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.937519, "lng": 25.423416, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st815_Oulunsalo",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24249",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.933641, "lng": 25.398064, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st815_Lunki",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24250",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.008548, "lng": 25.506412, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Kontinkangas",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24251",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.995387, "lng": 25.506002, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Oulu_Lintula",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24253",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.041186, "lng": 25.054259, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "st816_Hailuoto",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24254",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.054793, "lng": 25.607712, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt20_Rusko2",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24256",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.994916, "lng": 25.529079, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt22_Oulu_Kaukovainio",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24257",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.978763, "lng": 25.571824, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt22_Oulu_Iinatti",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24324",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 64.605566, "lng": 26.646651, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt22_Törmäkylä",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24452",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.69221, "lng": 24.685796, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4_Marostenmäki",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
-    "dataLatestValue": null
-  },
-  {
-    "id": "24470",
-    "crsType": "EPSG:4326",
-    "iconName": "car",
-    "location": { "lat": 65.672545, "lng": 24.908967, "elevation": -1 },
-    "status": "Online",
-    "sensorType": "LAM Point",
-    "description": "vt4 Simo Saukkoranta",
-    "IsDataSecret": false,
-    "measuringDirection": [-180, 180],
-    "measuringRadius": 1,
-    "measuringInterval": 60,
-    "measuringDescription": "",
-    "stationary": true,
-    "dataLink": null,
     "dataLatestValue": null
   }
 ]
