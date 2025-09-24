@@ -22,7 +22,7 @@ public class Values
 {
     public string Name { get; set; } = string.Empty;
     public string SensorId { get; set; } = string.Empty;
-    public double SensorValue { get; set; }
+    public double? SensorValue { get; set; }
     public string? SensorUnit { get; set; }
     public DateTime MeasuredTime { get; set; }
 }
