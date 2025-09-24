@@ -77,7 +77,7 @@ app.MapGet("/devices", async (DeviceDb db) =>
     await db.Devices.ToListAsync());
 
 /** GET Device by Id */
-app.MapGet("/devices/{id}", async (string id, DeviceDb db) =>
+app.MapGet("/devices/{id}", async (int id, DeviceDb db) =>
    await db.Devices.FindAsync(id)
     is Device Device
         ? Results.Ok(Device)
@@ -133,13 +133,13 @@ app.MapPost("/devices", async (Device Device, DeviceDb db) =>
 });
 
 /** PUT Device */
-app.MapPut("/devices/{id}", async (string id, Device inputDevice, DeviceDb db) =>
+app.MapPut("/devices/{id}", async (int id, Device inputDevice, DeviceDb db) =>
 {
     var device = await db.Devices.FindAsync(id);
 
     if (device is null) return Results.NotFound();
 
-    device.id = inputDevice.id;
+    // device.id = inputDevice.id;
     device.crsType = inputDevice.crsType;
     device.iconName = inputDevice.iconName;
     device.location = inputDevice.location;
@@ -158,11 +158,18 @@ app.MapPut("/devices/{id}", async (string id, Device inputDevice, DeviceDb db) =
 
     await db.SaveChangesAsync();
 
+    var deviceList = new List<Device>
+    {
+        device
+    };
+
+    // DataInput.InputDeviceList(app.Services, deviceList);
+
     return Results.NoContent();
 });
 
 /** DELETE Device */
-app.MapDelete("/devices/{id}", async (string id, DeviceDb db) =>
+app.MapDelete("/devices/{id}", async (int id, DeviceDb db) =>
 {
     if (await db.Devices.FindAsync(id) is Device Device)
     {
