@@ -3,6 +3,131 @@
     "id": null,
     "name": "",
     "crsType": "EPSG:4326",
+    "iconName": "co2",
+    "location": {
+      "lat": 65.056,
+      "lng": 25.46,
+      "elevation": 23
+    },
+    "status": "Online",
+    "sensorType": "co2",
+    "description": "Near crosswalk",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      50,
+      90
+    ],
+    "measuringRadius": 15,
+    "measuringInterval": 1,
+    "measuringDescription": "",
+    "stationary": true,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "co2",
+    "location": {
+      "lat": 65.057,
+      "lng": 25.46,
+      "elevation": 24
+    },
+    "status": "Maintenance",
+    "sensorType": "co2",
+    "description": "Above a trash can",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      60,
+      100
+    ],
+    "measuringRadius": 5,
+    "measuringInterval": 1,
+    "measuringDescription": "",
+    "stationary": true,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "motion",
+    "location": {
+      "lat": 65.058,
+      "lng": 25.46,
+      "elevation": 10
+    },
+    "status": "Online",
+    "sensorType": "motion",
+    "description": "Next to a tree",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      70,
+      110
+    ],
+    "measuringRadius": 5,
+    "measuringInterval": 1,
+    "measuringDescription": "",
+    "stationary": true,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "motion",
+    "location": {
+      "lat": 65.059,
+      "lng": 25.46,
+      "elevation": 10
+    },
+    "status": "Maintenance",
+    "sensorType": "motion",
+    "description": "Near entrance gate",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      80,
+      120
+    ],
+    "measuringRadius": 5,
+    "measuringInterval": 1,
+    "measuringDescription": "",
+    "stationary": true,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "moisture",
+    "location": {
+      "lat": 65.06,
+      "lng": 25.46,
+      "elevation": 10
+    },
+    "status": "Offline",
+    "sensorType": "humidity",
+    "description": "Next to lamp post",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      90,
+      130
+    ],
+    "measuringRadius": 5,
+    "measuringInterval": 1,
+    "measuringDescription": "",
+    "stationary": true,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
     "iconName": "parking",
     "location": {
       "lat": 65.0588222,
@@ -18,7 +143,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -44,7 +169,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -70,7 +195,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -96,7 +221,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -122,7 +247,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -148,7 +273,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -174,7 +299,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -200,7 +325,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -226,7 +351,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -252,7 +377,7 @@
       -180,
       180
     ],
-    "measuringRadius": 5,
+    "measuringRadius": 0,
     "measuringInterval": 1,
     "measuringDescription": "",
     "stationary": true,
@@ -281,6 +406,179 @@
     "measuringInterval": 60,
     "measuringDescription": "",
     "stationary": true,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "drone",
+    "location": {
+      "lat": 65.06,
+      "lng": 25.44,
+      "elevation": 10,
+      "path": [
+        {
+          "lat": 65.06402550509823,
+          "lng": 25.45313358306885
+        },
+        {
+          "lat": 65.06398931840567,
+          "lng": 25.4448938369751
+        },
+        {
+          "lat": 65.06346460584034,
+          "lng": 25.439615249633793
+        },
+        {
+          "lat": 65.06203516401268,
+          "lng": 25.43716907501221
+        },
+        {
+          "lat": 65.06105803306224,
+          "lng": 25.440044403076175
+        }
+      ]
+    },
+    "status": "Offline",
+    "sensorType": "drone",
+    "description": "On the street corner",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      200,
+      240
+    ],
+    "measuringRadius": 10,
+    "measuringInterval": 600,
+    "measuringDescription": "",
+    "stationary": false,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "drone",
+    "location": {
+      "lat": 65.061,
+      "lng": 25.437,
+      "elevation": -10
+    },
+    "status": "Online",
+    "sensorType": "drone",
+    "description": "Above a Street Sign",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      220,
+      260
+    ],
+    "measuringRadius": 10,
+    "measuringInterval": 600,
+    "measuringDescription": "",
+    "stationary": false,
+    "dataLink": null,
+    "dataLatestValue": null
+  },
+  {
+    "id": null,
+    "name": "",
+    "crsType": "EPSG:4326",
+    "iconName": "drone",
+    "location": {
+      "lat": 65.05597841051389,
+      "lng": 25.47486081719399,
+      "elevation": 10,
+      "path": [
+        {
+          "lat": 65.05651571320153,
+          "lng": 25.47690868377686
+        },
+        {
+          "lat": 65.05503160025646,
+          "lng": 25.478539466857914
+        },
+        {
+          "lat": 65.05477820685932,
+          "lng": 25.475492477416992
+        },
+        {
+          "lat": 65.05396371176485,
+          "lng": 25.47613620758057
+        },
+        {
+          "lat": 65.05381891003096,
+          "lng": 25.479998588562015
+        },
+        {
+          "lat": 65.05470580830332,
+          "lng": 25.48210144042969
+        },
+        {
+          "lat": 65.0556288751601,
+          "lng": 25.482401847839355
+        },
+        {
+          "lat": 65.0551039979274,
+          "lng": 25.485706329345703
+        },
+        {
+          "lat": 65.0538008097589,
+          "lng": 25.485620498657227
+        }
+      ],
+      "area": [
+        {
+          "lat": 65.05313109105128,
+          "lng": 25.48665046691895
+        },
+        {
+          "lat": 65.05506779911651,
+          "lng": 25.490427017211914
+        },
+        {
+          "lat": 65.05570127120852,
+          "lng": 25.485363006591797
+        },
+        {
+          "lat": 65.05651571320153,
+          "lng": 25.48158645629883
+        },
+        {
+          "lat": 65.0571310528665,
+          "lng": 25.476007461547855
+        },
+        {
+          "lat": 65.05633472824302,
+          "lng": 25.47064304351807
+        },
+        {
+          "lat": 65.05403611233679,
+          "lng": 25.468454360961918
+        },
+        {
+          "lat": 65.0533482989625,
+          "lng": 25.4743766784668
+        },
+        {
+          "lat": 65.05237084942186,
+          "lng": 25.480771064758304
+        }
+      ]
+    },
+    "status": "Maintenance",
+    "sensorType": "drone",
+    "description": "Above a House",
+    "IsDataSecret": false,
+    "measuringDirection": [
+      210,
+      250
+    ],
+    "measuringRadius": 10,
+    "measuringInterval": 600,
+    "measuringDescription": "",
+    "stationary": false,
     "dataLink": null,
     "dataLatestValue": null
   },
