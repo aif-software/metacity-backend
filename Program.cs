@@ -1,8 +1,14 @@
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
-
+using System.Text;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Http.HttpResults;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddEnvironmentVariables();
+
 builder.Services.AddDbContext<DeviceDb>(opt =>
 {
     opt.UseInMemoryDatabase("devices");
@@ -28,7 +34,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
             {
-                policy.WithOrigins("http://localhost:4200")
+                policy.WithOrigins("https://metacity-sensor-map-metacity.2.rahtiapp.fi")
                     .AllowAnyHeader()
                     .AllowAnyMethod();
             });
@@ -123,7 +129,8 @@ app.MapGet("/devices/elevation", async (double inputMinElevation, double inputMa
 app.MapGet("/devices/isdatasecret", async (DeviceDb db) =>
     await db.Devices.Where(d => d.isDataSecret).ToListAsync());
 
-/** POST Device */
+/**
+/** POST Device
 app.MapPost("/devices", async (Device Device, DeviceDb db) =>
 {
     db.Devices.Add(Device);
@@ -132,7 +139,7 @@ app.MapPost("/devices", async (Device Device, DeviceDb db) =>
     return Results.Created($"/devices/{Device.id}", Device);
 });
 
-/** PUT Device */
+/** PUT Device
 app.MapPut("/devices/{id}", async (int id, Device inputDevice, DeviceDb db) =>
 {
     var device = await db.Devices.FindAsync(id);
@@ -168,7 +175,7 @@ app.MapPut("/devices/{id}", async (int id, Device inputDevice, DeviceDb db) =>
     return Results.NoContent();
 });
 
-/** DELETE Device */
+/** DELETE Device
 app.MapDelete("/devices/{id}", async (int id, DeviceDb db) =>
 {
     if (await db.Devices.FindAsync(id) is Device Device)
@@ -180,5 +187,6 @@ app.MapDelete("/devices/{id}", async (int id, DeviceDb db) =>
 
     return Results.NotFound();
 });
+*/
 
 app.Run();
